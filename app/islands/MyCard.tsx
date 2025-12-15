@@ -12,8 +12,8 @@ export const MyCard: FC = () => {
     <div class="mt-10 mb-10 rounded-lg overflow-hidden bg-white dark:bg-gray-800 shadow-lg border-2 border-gray-200 dark:border-gray-700">
       <div class="overflow-hidden">
         <img
-          src="/static/head.png"
-          alt="头像"
+          src="https://img.peapix.com/77f41d60a88b48c987080c538afee680_1280.jpg"//头图来源 https://peapix.com/bing/cn
+          alt="头图"
           class="w-full h-64 object-cover transition-transform duration-500 hover:scale-105"
         />
       </div>

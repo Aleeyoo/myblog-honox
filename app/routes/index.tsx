@@ -6,7 +6,7 @@ import { MyCard } from "../islands/MyCard";
 export default function Top(): JSX.Element {
   return (
     <>
-      <Heading title="你好" />
+      <Heading title="我等春雪又一年..." />
       <MyCard />
       <Posts />
     </>
