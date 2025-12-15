@@ -1,0 +1,87 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+.output/
+.vite/
+
+# Deployment
+sites/
+.wrangler/
+.dev.vars
+.hono/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# IDE directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Editor directories and files
+.vs/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Package manager
+# package-lock.json - Keep this in version control for npm
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# Security
+localhost-key.pem
+localhost.pem
+
+# TypeScript
+*.tsbuildinfo
+.tsgo/
+
+# Biome
+.biome/
+
+# Mise
+.mise/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+temp/
+*.tmp
+*.temp
+
+# Misc
+settings.local.json
+*.bak
+*.backup
+*.old
+

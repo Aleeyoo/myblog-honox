@@ -1,0 +1,7 @@
+name = "myblog-honox"
+compatibility_date = "2025-12-12"
+compatibility_flags = [ "nodejs_compat" ]
+preview_urls = true
+
+[assets]
+directory = "./dist"

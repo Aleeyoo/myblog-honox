@@ -1,0 +1,143 @@
+---
+title: "Markdown 语法说明"
+description: "2024/12/12 验证此模板的 Markdown 语法展示效果。"
+date: "2025/12/12"
+published: true
+---
+
+##### 提醒：
+> 未列出就是不支持
+>
+> 已知问题：
+> 1. 行与行之间空一行；
+> 2. 目录不显示标题结构；
+
+## 1. 标题
+``` Markdown
+# Heading level 1
+
+Heading level 1
+===============
+
+## Heading level 2
+
+Heading level 2
+---------------
+
+### Heading level 3
+
+#### Heading level 4
+
+##### Heading level 5
+
+###### Heading level 6
+```
+
+## 2. 字体
+### 2.1. 普通：
+```
+I really like using Markdown.
+
+I think I'll use it to format all of my documents from now on.
+```
+
+### 2.2. 粗体：
+如：I just love __bold text__.
+```
+I just love **bold text**.
+
+I just love __bold text__.
+
+Love**is**bold
+```
+
+### 2.3. 斜体：
+如：Italicized text is the *cat's meow*.
+```
+Italicized text is the *cat's meow*.
+
+Italicized text is the _cat's meow_.
+
+A*cat*meow
+```
+> `***text***` 或 `___text___` 为粗斜体
+
+## 3. 引用
+如：
+> Dorothy followed her through many of the beautiful rooms in her castle.
+```
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+```
+
+### 3.1. 嵌套：
+```
+> Dorothy followed her through many of the beautiful rooms in her castle.
+>
+>> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+```
+
+## 4. 列表
+如：
+1. First item
+2. Second item
+3. Third item
+    - Indented item
+    * Indented item
+    + Indented item
+4. Fourth item
+```
+1. First item
+2. Second item
+3. Third item
+    - Indented item
+    * Indented item
+    + Indented item
+4. Fourth item
+```
+
+## 5. 代码
+如：
+At the command prompt, type `nano`.
+
+``Use `code` in your Markdown file.``
+```
+At the command prompt, type `nano`.
+
+``Use `code` in your Markdown file.``
+```
+
+## 6. 分隔线
+***
+
+---
+
+_________________
+```
+***
+
+---
+
+_________________
+```
+
+## 7. 链接
+如：这是一个链接 [Markdown语法](https://markdown.com.cn)。
+
+增加 Title：这是一个链接 [Markdown语法](https://markdown.com.cn "最好的markdown教程")。
+
+```
+这是一个链接 [Markdown语法](https://markdown.com.cn)。
+
+这是一个链接 [Markdown语法](https://markdown.com.cn "最好的markdown教程")。
+```
+
+## 8. 图片
+```
+![这是图片](/assets/img/philly-magic-garden.jpg "Magic Gardens")
+
+[![沙漠中的岩石图片](/assets/img/shiprock.jpg "Shiprock")](https://markdown.com.cn)
+
+```
+
