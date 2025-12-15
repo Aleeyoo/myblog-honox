@@ -3,7 +3,7 @@ import { jsxRenderer } from "hono/jsx-renderer";
 import ContentWrapper from "../../islands/ContentWrapper";
 
 export default jsxRenderer(({ children, Layout, frontmatter }) => {
-  const _title = `${frontmatter?.title} | 楽の博客`;
+  const _title = `${frontmatter?.title} | Aleeyoo`;
   return (
     <Layout title={_title} description={frontmatter?.description}>
       <div class="text-right mt-3">
@@ -11,7 +11,7 @@ export default jsxRenderer(({ children, Layout, frontmatter }) => {
           <h1>{frontmatter?.title}</h1>
           <dl class="flex items-center gap-3">
             <div class="flex items-center gap-1">
-              <dt>发布日期: </dt>
+              <dt>发布于： </dt>
               <dd>{frontmatter?.date}</dd>
             </div>
 

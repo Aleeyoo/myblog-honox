@@ -4,7 +4,7 @@ import { Script } from "honox/server";
 import { LINK } from "../constants";
 
 export default jsxRenderer(({ children, title, description }) => {
-  const _title = title ?? "楽の博客";
+  const _title = title ?? "Aleeyoo - 只道只今句...";
   const _description = description ?? "All about Aleeyoo !!!";
   const _image = "/static/icon.png";
 
@@ -36,7 +36,7 @@ export default jsxRenderer(({ children, title, description }) => {
         <header>
           <div class="max-w-(--breakpoint-2xl) mx-auto flex h-16 items-center justify-between">
             <a href="/" class="text-black dark:text-white text-base font-bold">
-              人生需要发呆...
+              只道只今句...
             </a>
             <div class="flex items-center gap-4">
               <a
@@ -45,7 +45,7 @@ export default jsxRenderer(({ children, title, description }) => {
                 rel={"noreferrer"}
                 class="dark:hover:bg-white dark:hover:text-black-900 dark:hover:no-underline"
               >
-                主页
+                我
               </a>
               <a
                 href={LINK.GITHUB}

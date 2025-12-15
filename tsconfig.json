@@ -13,5 +13,5 @@
     "isolatedDeclarations": true,
     "resolveJsonModule": true
   },
-  "include": ["./app"]
+  "include": ["./app", "app/routes/posts"]
 }

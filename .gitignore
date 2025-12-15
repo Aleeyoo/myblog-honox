@@ -85,3 +85,4 @@ settings.local.json
 *.backup
 *.old
 
+package-lock.json
