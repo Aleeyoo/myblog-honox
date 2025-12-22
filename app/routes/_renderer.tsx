@@ -36,7 +36,7 @@ export default jsxRenderer(({ children, title, description }) => {
         <header>
           <div class="max-w-(--breakpoint-2xl) mx-auto flex h-16 items-center justify-between">
             <a href="/" class="text-black dark:text-white text-base font-bold">
-              只道只今句...
+              楽的博客
             </a>
             <div class="flex items-center gap-4">
               <a
@@ -46,6 +46,14 @@ export default jsxRenderer(({ children, title, description }) => {
                 class="dark:hover:bg-white dark:hover:text-black-900 dark:hover:no-underline"
               >
                 我
+              </a>
+               <a
+                href={LINK.Mastodon}
+                target={"_blank"}
+                rel={"noreferrer"}
+                class="dark:hover:bg-white dark:hover:text-black-900 dark:hover:no-underline"
+              >
+                生活
               </a>
               <a
                 href={LINK.GITHUB}

@@ -14,7 +14,12 @@ export default jsxRenderer(({ children, Layout, frontmatter }) => {
               <dt>发布于： </dt>
               <dd>{frontmatter?.date}</dd>
             </div>
-
+          </dl>
+          <dl class="flex items-center gap-3">
+            <div class="flex items-center gap-1">
+              <dt>概述： </dt>
+              <dd>{frontmatter?.description}</dd>
+            </div>
           </dl>
         </ContentWrapper>
       </div>
