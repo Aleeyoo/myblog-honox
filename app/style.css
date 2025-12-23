@@ -515,3 +515,45 @@
 .toc-level-4 {
     @apply pl-8;
 } */
+
+/* TOC (Table of Contents) styling */
+.markdown ul.toc {
+    @apply list-none pl-0 my-5 border border-gray-300 rounded-[5px] px-[10px] py-[10px] bg-[#f9f9f9] dark:bg-black;
+}
+
+.markdown ul.toc li {
+    @apply my-[10px];
+}
+
+.markdown ul.toc a {
+    @apply no-underline text-[#0077cc] transition-colors duration-300 hover:text-[#005fa3];
+}
+
+.toc-level-2 {
+    @apply pl-0 font-bold;
+}
+
+.toc-level-3 {
+    @apply pl-4 font-normal;
+}
+
+.toc-level-4 {
+    @apply pl-8 font-normal;
+}
+
+/* Remove underline from span elements in title-description-link */
+.title-description-link span {
+    text-decoration: none !important;
+}
+
+/* Add underline to title-text and description-text by default */
+.title-description-link .title-text,
+.title-description-link .description-text {
+    text-decoration: underline;
+}
+
+/* Remove underline on hover */
+.title-description-link:hover .title-text,
+.title-description-link:hover .description-text {
+    text-decoration: none !important;
+}

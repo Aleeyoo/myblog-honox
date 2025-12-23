@@ -4,7 +4,7 @@ export type Head = {
   title?: string;
   description?: string;
   date?: string;
-
+  image?: string;
   path?: string;
 };
 

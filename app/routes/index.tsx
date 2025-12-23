@@ -17,6 +17,7 @@ type PostEntry = {
     frontmatter: {
       title: string;
       date: string;
+      description: string;
     };
   };
 };
@@ -25,7 +26,7 @@ const FIRST_BLOG_POST_YEAR = 2025;
 
 const Posts: FC = () => {
   const posts = import.meta.glob<{
-    frontmatter: { title: string; date: string; published: boolean };
+    frontmatter: { title: string; date: string; published: boolean; description: string };
   }>("./posts/*.mdx", { eager: true });
   const entries = Object.entries(posts).filter(
     ([_, module]) =>
@@ -59,6 +60,7 @@ const Posts: FC = () => {
           date: "frontmatter" in post ? post.frontmatter.date : "",
           title: "frontmatter" in post ? post.frontmatter.title : "",
           link: id.replace(/\.mdx$/, "").replace(/\./g, ""),
+          description: "frontmatter" in post ? post.frontmatter.description : "",
           postedIn: "blog",
         }));
       const posts = [...arrBlog];
@@ -86,7 +88,7 @@ const Posts: FC = () => {
               // biome-ignore lint/suspicious/noArrayIndexKey: enable index
               <Fragment key={`${index}`}>
                 <h3 class="text-xl my-5">{res.year}</h3>
-                {res.posts.map(({ id, title, date, link }) => {
+                {res.posts.map(({ id, title, date, link, description}) => {
                   return (
                     <li key={id} class="text-lg mt-2 md:mt-1">
                       <time class="tabular-nums tnum date pr-3 text-gray-800 dark:text-gray-dcd">
@@ -94,15 +96,15 @@ const Posts: FC = () => {
                       </time>
                       <br class="block md:hidden" />
                       <a
-                        class="underline hover:bg-black-900 hover:text-white dark:hover:bg-white dark:hover:text-black-900 hover:no-underline"
+                        class="hover:bg-black-900 hover:text-white dark:hover:bg-white dark:hover:text-black-900 hover:no-underline title-description-link"
                         href={link}
+                        data-title={title}
+                        data-description={description}
                       >
-                        {title}
+                        <span class="title-text underline">{title}</span>
+                        <span class="description-text hidden underline">{description}</span>
+                        <br class="block md:hidden" />
                       </a>
-
-
-
-
                     </li>
                   );
                 })}

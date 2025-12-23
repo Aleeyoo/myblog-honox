@@ -15,12 +15,13 @@ export default jsxRenderer(({ children, Layout, frontmatter }) => {
               <dd>{frontmatter?.date}</dd>
             </div>
           </dl>
-          <dl class="flex items-center gap-3">
-            <div class="flex items-center gap-1">
-              <dt>概述： </dt>
-              <dd>{frontmatter?.description}</dd>
-            </div>
-          </dl>
+          {frontmatter?.image && (
+            <img
+              src={frontmatter.image}
+              alt={frontmatter?.title || ""}
+              class="w-full rounded-md"
+            />
+          )}
         </ContentWrapper>
       </div>
     </Layout>

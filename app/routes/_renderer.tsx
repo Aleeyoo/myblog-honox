@@ -26,6 +26,7 @@ export default jsxRenderer(({ children, title, description }) => {
           content="AkwxmXeiTVIX8BZoXBhoT6N+EgwJbwpLsr/ryGyFsPE538JL2YK/pnkwhv2EIXqCe77Qrw5TcHsC/AHmZfommAUAAABkeyJvcmlnaW4iOiJodHRwczovL3lvc3N5LmRldjo0NDMiLCJmZWF0dXJlIjoiVHJhbnNsYXRpb25BUEkiLCJleHBpcnkiOjE3NTMxNDI0MDAsImlzU3ViZG9tYWluIjp0cnVlfQ=="
         />
         <Script src="/app/client.ts" />
+        <script src="/scripts/hover-effect.js"></script>
         {import.meta.env.PROD ? (
           <link href="/static/assets/style.css" rel="stylesheet" />
         ) : (
@@ -36,7 +37,7 @@ export default jsxRenderer(({ children, title, description }) => {
         <header>
           <div class="max-w-(--breakpoint-2xl) mx-auto flex h-16 items-center justify-between">
             <a href="/" class="text-black dark:text-white text-base font-bold">
-              楽的博客
+              博客
             </a>
             <div class="flex items-center gap-4">
               <a
