@@ -101,8 +101,8 @@ const Posts: FC = () => {
                         data-title={title}
                         data-description={description}
                       >
-                        <span class="title-text underline">{title}</span>
-                        <span class="description-text hidden underline">{description}</span>
+                        <span class="title-text" style={{ textDecoration: "none" }}>{title}</span>
+        <span class="description-text hidden" style={{ textDecoration: "none" }}>{description}</span>
                         <br class="block md:hidden" />
                       </a>
                     </li>

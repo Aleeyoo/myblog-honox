@@ -17,7 +17,7 @@ function initHoverEffects() {
     link.addEventListener('mouseenter', () => {
       titleText.classList.add('hidden');
       descriptionText.classList.remove('hidden');
-      // Remove underline on hover
+      // Ensure no underline on hover
       titleText.style.textDecoration = 'none';
       descriptionText.style.textDecoration = 'none';
       console.log('Mouse enter on link', index);
@@ -26,9 +26,9 @@ function initHoverEffects() {
     link.addEventListener('mouseleave', () => {
       titleText.classList.remove('hidden');
       descriptionText.classList.add('hidden');
-      // Restore underline when not hovering
-      titleText.style.textDecoration = 'underline';
-      descriptionText.style.textDecoration = 'underline';
+      // Ensure no underline when not hovering
+      titleText.style.textDecoration = 'none';
+      descriptionText.style.textDecoration = 'none';
       console.log('Mouse leave on link', index);
     });
   });

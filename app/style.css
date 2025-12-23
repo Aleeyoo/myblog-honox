@@ -549,11 +549,11 @@
 /* Add underline to title-text and description-text by default */
 .title-description-link .title-text,
 .title-description-link .description-text {
-    text-decoration: underline;
+  text-decoration: none !important;
 }
 
 /* Remove underline on hover */
 .title-description-link:hover .title-text,
 .title-description-link:hover .description-text {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
