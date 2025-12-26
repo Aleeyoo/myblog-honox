@@ -1,6 +1,7 @@
 import type { MiddlewareHandler } from "hono";
 import { jsxRenderer } from "hono/jsx-renderer";
 import ContentWrapper from "../../islands/ContentWrapper";
+import { PostImage } from "../../islands/PostImage";
 
 export default jsxRenderer(({ children, Layout, frontmatter }) => {
   const _title = `${frontmatter?.title} | Aleeyoo`;
@@ -15,13 +16,7 @@ export default jsxRenderer(({ children, Layout, frontmatter }) => {
               <dd>{frontmatter?.date}</dd>
             </div>
           </dl>
-          {frontmatter?.image && (
-            <img
-              src={frontmatter.image}
-              alt={frontmatter?.title || ""}
-              class="w-full rounded-md"
-            />
-          )}
+          {frontmatter?.image && <PostImage image={frontmatter.image} />}
         </ContentWrapper>
       </div>
     </Layout>

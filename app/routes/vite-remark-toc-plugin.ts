@@ -9,7 +9,7 @@ function rehypeTOC() {
   return (tree: Root): void => {
     const headings: Heading[] = [];
     visit(tree, "element", (node: Element) => {
-      if (node.tagName === "h2" || node.tagName === "h3") {
+      if (node.tagName === "h2" || node.tagName === "h3" || node.tagName === "h4" || node.tagName === "h5" || node.tagName === "h6") {
         const id = createId(node);
         headings.push({ id, ...node });
         node.properties.id = id;
