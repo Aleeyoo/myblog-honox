@@ -37,7 +37,7 @@ export default jsxRenderer(({ children, title, description }) => {
         <header>
           <div class="max-w-(--breakpoint-2xl) mx-auto flex h-16 items-center justify-between">
             <a href="/" class="text-black dark:text-white text-base font-bold">
-              博客
+              Aleeyoo
             </a>
             <div class="flex items-center gap-4">
               <a
@@ -55,6 +55,13 @@ export default jsxRenderer(({ children, title, description }) => {
                 class="dark:hover:bg-white dark:hover:text-black-900 dark:hover:no-underline"
               >
                 生活
+              </a>
+              <a
+                href="/rss.xml"
+                class="dark:hover:bg-white dark:hover:text-black-900 dark:hover:no-underline"
+                title="RSS订阅"
+              >
+                订阅
               </a>
               <a
                 href={LINK.GITHUB}
