@@ -40,14 +40,6 @@ export default jsxRenderer(({ children, title, description }) => {
               Aleeyoo
             </a>
             <div class="flex items-center gap-4">
-              <a
-                href={LINK.HOME}
-                target={"_blank"}
-                rel={"noreferrer"}
-                class="dark:hover:bg-white dark:hover:text-black-900 dark:hover:no-underline"
-              >
-                我
-              </a>
                <a
                 href={LINK.Mastodon}
                 target={"_blank"}
