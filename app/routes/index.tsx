@@ -6,8 +6,8 @@ import { MyCard } from "../islands/MyCard";
 export default function Top(): JSX.Element {
   return (
     <>
-      <Heading title="我等春雪又一年" />
-      <MyCard />
+      {/* <Heading title="我等春雪又一年" /> */}
+      {/* <MyCard /> */}
       <Posts />
     </>
   );
@@ -79,7 +79,7 @@ const Posts: FC = () => {
 
   return (
     <div class="mt-16">
-      <Heading title="文章" />
+      <Heading title="博客" />
       <ul class="mt-10">
         {yearlyBlogs()
           .reverse()
