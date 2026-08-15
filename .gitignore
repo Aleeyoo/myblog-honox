@@ -89,3 +89,7 @@ package-lock.json
 app/routes/posts/desktop.ini
 app/routes/desktop.ini
 scripts/github-image-cdn.js
+
+# Agent
+.Claude
+.pi
